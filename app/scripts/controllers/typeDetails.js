@@ -29,21 +29,7 @@ angular.module('hackathonApp')
       };
 
       vm.update = function(d) {
-        // TODO - FIX THIS!!!
-        // HINT
-        // Given a date 'd' you can find the start of the month like so
-        // moment(d).startOf('month').unix();
-        // and end of month like so moment(d).endOf('month').unix();
-        //
-        // Another HINT
-        // Look into typesFactory.getTypeDetails()
-        // REMEMBER!! typesFactory.getTypeDetails() returns a PROMISE object
-        //
-        // Last hint
-        // You will need to extract the ID from the URL
-        // Look at the documentation for $routeSegment
-        // http://angular-route-segment.com/
-        // vm.date = d;
+
         var newStart = moment(d).startOf('month').unix();
         var newEnd = moment(d).endOf('month').unix();
 
